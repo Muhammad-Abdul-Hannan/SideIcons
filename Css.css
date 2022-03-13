@@ -1,11 +1,13 @@
+
 .SideIcons{
     width: 50px;
     height: 270px;
-    position: absolute;
-    top: 200px;
+    position: fixed;
+    top: 180px;
+    z-index: 3;
 }
 
-.SideIcons .btn{
+.SideIcons .btn1{
     display: inline-block;
     background-color: white;
     width: 40px;
@@ -17,36 +19,36 @@
     z-index: 0;
 }
 
-.SideIcons .btn ion-icon{
+.SideIcons .btn1 ion-icon{
     font-size: 30px;
     vertical-align: middle;
     margin-left: 5px;
 }
 
-.SideIcons .btn ion-icon {
+.SideIcons .btn1 ion-icon {
     color: var(--color);
 }
 
 /* bg before  */
 
-.SideIcons .btn::before{
+.SideIcons .btn1::before{
     top: 0;
     display: none;
-    width: 86px;
+    width: 92px;
     height: 40px;
     border-radius: 0 10px 10px 0px;
     font-size: large;
     text-align: center;
     color: white;
     letter-spacing: 1px;
-    padding-left: 3px;
+    padding-left: 6px;
     z-index: -1;
 }
 
 .SideIcons #btn1::before{
     content: "Facebook";
     position: absolute;
-    background-color: #3271fa;
+    background-color: #4267B2;
 }
 
 .SideIcons #btn2::before{
@@ -73,7 +75,7 @@
     background-color: #0e76a8;
 }
 
-.SideIcons .btn:hover::before{
+.SideIcons .btn1:hover::before{
     display: block;
     animation-name: example;
     animation-duration: 0.25s;
@@ -92,7 +94,7 @@
     }
 }
 
-.SideIcons .btn .btnD1{
+.SideIcons .btn1 .btnD1{
     position: relative;
     width: 100%;
     height: 100%;
@@ -100,35 +102,35 @@
     border-radius: 10px;
 }
 
-.SideIcons .btn .btnD2:before {
+.SideIcons .btn1 .btnD2::before {
     content: '';
     position: absolute;
-    width: 130%;
-    height: 130%;
-    border-radius: 10px;
+    width: 160%;
+    height: 160%;
     background-color: var(--color);
-    transform: rotate(0deg);
+    transform: rotate(55deg);
 
 }
 
-.SideIcons .btn .btnD2:before {
-    top: 115%;
+.SideIcons .btn1 .btnD2:before {
+    top: 105%;
     left: 0%;
 }
 
-.SideIcons .btn .btnD2:hover:before {
+.SideIcons .btn1 .btnD2:hover:before
+ {
     top: 0%;
     left: 0%;
 }
 
-.SideIcons .btn:hover ion-icon {
+.SideIcons .btn1 .btnD2:hover ion-icon {
     color: #fff;
-    transform: scale(0.8);
+    transform: scale(0.7);
 }
 
-.SideIcons .btn,
-.SideIcons .btn:before,
-.SideIcons .btn ion-icon {
+.SideIcons .btn1,
+.SideIcons .btn1:before,
+.SideIcons .btn1 ion-icon {
     transition: all 0.35s;
     transition-timing-function: 
       cubic-bezier(0.31, -0.105, 0.43, 1.59);
